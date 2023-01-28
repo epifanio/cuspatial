@@ -15,6 +15,7 @@
 cmake_minimum_required(VERSION 3.23.1 FATAL_ERROR)
 
 set(cuspatial_version 23.02.00)
+set(_CMAKE_CUDA_WHOLE_FLAG "-c")
 
 file(DOWNLOAD https://raw.githubusercontent.com/rapidsai/rapids-cmake/branch-23.02/RAPIDS.cmake
      ${CMAKE_BINARY_DIR}/RAPIDS.cmake)
